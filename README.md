@@ -400,7 +400,7 @@ body, .container, .video-controls, .video-timer, .options{
 # JavaScript file ![#FFFF00](https://via.placeholder.com/15/FFFF00/FFFF00.png) 
 The JavaScript file will be used to make all the video controls functions work.
 
-```bash
+```javascript
 const container = document.querySelector(".container")            
 
 mainVideo = container.querySelector("video")                      
