@@ -4,9 +4,16 @@
 the project was created using 3 files: HTML, CSS, and JavaScript file.
 
 
+
+
+
+
  # HTML file ![#FFA500](https://via.placeholder.com/15/FFA500/FFA500.png) 
 
  the HTML file basically contains many < div > tags, each tag has a class name so we can refer to each class in the CSS and JavaScript file.
+  
+  
+  
   
 ```bash
   <html>
