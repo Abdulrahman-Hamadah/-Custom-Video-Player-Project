@@ -147,4 +147,6 @@ the project was created using 3 files: HTML, CSS, and JavaScript file.
 
 </html>
 ```
+</br>
 
+# CSS file
