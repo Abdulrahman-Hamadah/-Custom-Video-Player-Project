@@ -704,8 +704,9 @@ container.addEventListener("mousemove", () => {
 </br>
 
 # Step 1:
+create a variable that refer to the 'container' class in the HTML file.
 
 ```bash
-
+const container = document.querySelector(".container") 
 ```
 
