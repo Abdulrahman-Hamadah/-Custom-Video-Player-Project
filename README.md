@@ -7,5 +7,5 @@
 # text in gray
 @@ text in purple (and bold)@@
 
-@@ hello
+@@ hello@@
 ```
