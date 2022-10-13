@@ -153,7 +153,7 @@ the project was created using 3 files: HTML, CSS, and JavaScript file.
 # CSS file ![#0000FF](https://via.placeholder.com/15/0000FF/0000FF.png) 
 the CSS file contains all the designs we need. for example to design our icons of the video and to put them inisde the video and so on..
 
-```bash
+```css
 /* Import Google font - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 *{
