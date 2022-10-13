@@ -149,4 +149,4 @@ the project was created using 3 files: HTML, CSS, and JavaScript file.
 ```
 </br>
 
-# CSS file
+# CSS file ![#0000FF](https://via.placeholder.com/15/0000FF/0000FF.png) 
