@@ -695,3 +695,17 @@ container.addEventListener("mousemove", () => {
     
 });
 ```
+
+</br>
+</br>
+
+# JavaScript file step by step explanation ![#FFFF00](https://via.placeholder.com/15/FFFF00/FFFF00.png) 
+
+</br>
+
+# Step 1:
+
+```bash
+
+```
+
