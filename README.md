@@ -3,10 +3,8 @@
 
 the project was created using 3 files: HTML, CSS, and JavaScript file.
 
-
-
-
-
+<br />
+<br />
 
  # HTML file ![#FFA500](https://via.placeholder.com/15/FFA500/FFA500.png) 
 
