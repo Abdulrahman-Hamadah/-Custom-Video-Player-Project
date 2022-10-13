@@ -706,7 +706,21 @@ container.addEventListener("mousemove", () => {
 # Step 1:
 create a variable that refer to the 'container' class in the HTML file.
 
-```bash
+```javascript
 const container = document.querySelector(".container") 
+```
+
+# Step 2:
+create a variable that refer to the video itself in the HTML file.
+
+```javascript
+mainVideo = container.querySelector("video")
+```
+
+# Step 3:
+create a variable that refer to the play/pause button inside the 'video' class.
+
+```javascript
+playPauseBtn = container.querySelector(".play-pause i")
 ```
 
