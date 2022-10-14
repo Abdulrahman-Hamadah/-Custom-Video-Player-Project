@@ -1190,7 +1190,7 @@ videoTimeline.addEventListener("mousemove", e => {
     progressTime.innerText = formatTime(percent);                               
 
 });
- 
+ ```
     # Step 44:
 now we want to hide the controls when the mouse is outside the video frame and the video is not paused. so we will make a new variable first.
 ```javascript
