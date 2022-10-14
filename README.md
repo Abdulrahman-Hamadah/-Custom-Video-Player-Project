@@ -1113,7 +1113,7 @@ videoTimeline.addEventListener("click", e => {
 });
 ```
  
-    # Step 39:
+# Step 39:
 we want to make the progress bar draggable by the mouse. to do that we will make a function to make it work and we will use it in step 40 and 41 to make it work. So in line 2 we are using the "clientWidth" to get the width in the CSS file, thenm in line 3 we are passing the "e.offsetX" vale as the progress bar width. then in line 4 we are using a calculation to update the time position of the video. the "e.offsetX" is the mouse X position
 
 ```javascript
@@ -1127,7 +1127,7 @@ const draggableProgressBar = e => {
  }
 ```
  
-    # Step 40:
+# Step 40:
 to make the function (in step 39) work we will make a new function that work when there is a "mousedown" event. this event occurs when a user presses a mouse button over an element. then in line 3 we are calling "draggableProgressBar" function on the "mousemove" event. the "mousemove" event occurs when the mouse is moving while it is over an element.
 
 ```javascript
