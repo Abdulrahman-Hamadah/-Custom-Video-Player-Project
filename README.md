@@ -1138,7 +1138,7 @@ videoTimeline.addEventListener("mousedown", () => {
 });
  }
  
- # Step 41:
+# Step 41:
  if you try to drag the progress bar it will work, but when you release it it will still follow the mouse because the "mousemove" event is still working. to fix that we need to make a new function to remove the "mousemove" event when the user release the left click button of the mouse. So the in line 1 the "mouseup" event occurs when a user releases a mouse button over an element. then, in line 2 it will remove the "mousemove" event.
 ```javascript
 document.addEventListener("mouseup", () => {                                    
@@ -1149,7 +1149,7 @@ document.addEventListener("mouseup", () => {
  }
 ```
  
-  # Step 42:
+# Step 42:
 now we want to update the 00:00 (that show us the current video time) smoothly while we are dragging the bar. to do that we will add a new line in the "draggableProgressBar" function in step 39. the new line is this:
 ```javascript
 currentVidTime.innerText = formatTime(mainVideo.currentTime);
