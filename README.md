@@ -735,3 +735,189 @@ playPauseBtn.addEventListener("click", () => {
 });
 ```
 
+# Step 5:
+we will create a function to make the play/pause button work. the "click" is an event that related to the "addEventListener" to make something happen when the user click the button. and the "click" is also added to the function to make the function work when the user click the play/pause button. inside this function there is a condition that use the "play()" and "pause()" methods to make the video play and pause. So if the video is paused then it will play it. otherwise it will pause it
+
+```javascript
+playPauseBtn.addEventListener("click", () => {                    
+
+    (mainVideo.paused) ? mainVideo.play() : mainVideo.pause();    
+
+});
+```
+
+# Step 6:
+we will create a function to make the play/pause button change it's icon when the video is playing. the "play" is an event that related to the "addEventListener" to make something happen when the video is playing. inside this function we are using the "classList" to be able to return one of the "DOMTokenList" methods which is "replace" method.
+
+```javascript
+mainVideo.addEventListener("play", () => {                        
+
+    playPauseBtn.classList.replace("fa-play", "fa-pause");        
+
+});
+```
+
+# Step 7:
+we will create a function to make the play/pause button change it's icon when the video is paused. the "pause" is an event that related to the "addEventListener" to make something happen when the video is paused.
+
+```javascript
+mainVideo.addEventListener("pause", () => {                       
+
+    playPauseBtn.classList.replace("fa-pause", "fa-play");        
+
+});
+```
+# Step 8:
+we will create a new variable to access the skip forward button
+
+```javascript
+skipForward = container.querySelector(".skip-forward i")     
+```
+
+# Step 9:
+we will create a new variable to access the skip backward button
+
+```javascript
+skipBackward = container.querySelector(".skip-backward i")     
+```
+
+
+# Step 10:
+create a new function to add 5 seconds from the current video time when we click the skip forward nutton.
+
+```javascript
+skipForward.addEventListener("click", () => {                       
+
+    mainVideo.currentTime += 5;                                    
+
+});    
+```
+
+
+# Step 11:
+create a new function to sub 5 seconds from the current video time when we click the skip backward nutton.
+
+```javascript
+skipBackward.addEventListener("click", () => {                       
+
+    mainVideo.currentTime -= 5;                                    
+
+});  
+```
+# Step 12:
+we will create a new variable to access the volume button
+
+```javascript
+volumeBtn = container.querySelector(".volume i")      
+```
+
+# Step 13:
+we will create a new variable to access the volume slider
+
+```javascript
+volumeSlider = container.querySelector(".left input")     
+```
+
+# Step 14:
+we will create a new variable to access the volume slider
+
+```javascript
+volumeSlider = container.querySelector(".left input")     
+```
+# Step 15:
+we will create a new function to make the volume button work and change it's icon when we click it. So if you click the icon and the volume icon is not high volume icon then it will pass 0.5 volume value to the video and it will replace the xmark volume icon to the high volume icon. other than that, it will pass 0.0 volume value to the video and it will replace the high mark volume icon to the xmark volume icon.
+
+```javascript
+volumeBtn.addEventListener("click", () => {                       
+
+    if ( ! volumeBtn.classList.contains( "fa-volume-high" ) ) {                     
+
+        mainVideo.volume = 0.5;                                                     
+
+        volumeBtn.classList.replace( "fa-volume-xmark" , "fa-volume-high" );        
+    }
+    
+    else {                                                                          
+
+        mainVideo.volume = 0.0;                                                     
+
+        volumeBtn.classList.replace( "fa-volume-high" , "fa-volume-xmark" );        
+    }                                       
+
+});     
+```
+# Step 16:
+we will create a function to make the volume slider work. the "input" event will make the function work when there is a chnage to the input value (the slider). and in line number 2 we will pass the video volume value into the slider value. then we will change the icon if the slider volume value is 0 and we will change it again if it is not 0.
+
+```javascript
+volumeSlider.addEventListener("input", event => {                                   
+
+    mainVideo.volume = event.target.value;                                          
+
+    if ( event.target.value == 0 ) {                                                
+
+        volumeBtn.classList.replace( "fa-volume-high" , "fa-volume-xmark" );        
+
+    }
+
+    else {                                                                          
+
+        volumeBtn.classList.replace( "fa-volume-xmark" , "fa-volume-high" );        
+
+    }
+
+});   
+```
+# Step 17:
+in step number 15, we will add a new line to update the slider value according to the "mainVideo.volume" value. so when the user click the volume button when it is muted, the slider will increase to the middle beacuse the volume value will be 0.5.
+```javascript
+volumeSlider.value = mainVideo.volume; 
+```
+so the function with the new line will look like this:
+```javascript
+volumeBtn.addEventListener("click", () => {                       
+
+    if ( ! volumeBtn.classList.contains( "fa-volume-high" ) ) {                     
+
+        mainVideo.volume = 0.5;                                                     
+
+        volumeBtn.classList.replace( "fa-volume-xmark" , "fa-volume-high" );        
+    }
+    
+    else {                                                                          
+
+        mainVideo.volume = 0.0;                                                     
+
+        volumeBtn.classList.replace( "fa-volume-high" , "fa-volume-xmark" );        
+    }
+
+    volumeSlider.value = mainVideo.volume;                                          
+
+});
+```
+
+# Step 18:
+we will make a new variable to access the speed button
+```javascript
+speedBtn = container.querySelector(".playback-speed span")
+```
+
+# Step 19:
+we will make a new variable to access the speed options inside the speed button.
+```javascript
+speedOptions = container.querySelector(".speed-options")
+```
+
+# Step 20:
+we will make a function to add extra word which is the word "show" to the speedOptions class name when the user click, and if the suer click again, the word "show" will be removed. this is to make changes in line 173 in the CSS file to make the speed options show or not to show when we click instead of mouse hoover over the button.
+```javascript
+speedBtn.addEventListener("click", () => {                       
+
+    speedOptions.classList.toggle("show");                                                              
+
+});
+```
+
+
+
+
