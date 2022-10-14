@@ -1218,7 +1218,7 @@ const hideControls = () => {
 ```
  
  
-    # Step 46:
+# Step 46:
 this function to make add the word "show-controls" while the mouse is moving inside the video frame. it will also remove the timer while doing that, and also we need to call the hideControls(); to make it keep working work 
 ```javascript
 container.addEventListener("mousemove", () => {     
