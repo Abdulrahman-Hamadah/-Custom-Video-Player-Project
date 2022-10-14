@@ -1194,13 +1194,11 @@ videoTimeline.addEventListener("mousemove", e => {
 ```
  
  
-
- 
- 
-     # Step 44:
+  # Step 44:
 now we want to hide the controls when the mouse is outside the video frame and the video is not paused. so we will make a new variable first.
  
 ```javascript
+ 
  let timer; 
  
 ```
@@ -1224,25 +1222,6 @@ const hideControls = () => {
  
 ```
  
- 
-   # Step 45:
-then we will make a new function, line 3 - 5 is a timer that is set for 3 seconds to remove the "show-controls" to change some property in the CSS file. and line 2 is to put back the "show-controls" word if the video is paused. and then the last line to call the function.
-```javascript
-const hideControls = () => {
-
-    if(mainVideo.paused) return;                      
-
-    timer = setTimeout(() => {
-
-        container.classList.remove("show-controls");  
-
-    }, 3000);
-
-}
- 
- hideControls();
- 
-```
  
  
 # Step 46:
