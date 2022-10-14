@@ -1190,6 +1190,7 @@ videoTimeline.addEventListener("mousemove", e => {
     progressTime.innerText = formatTime(percent);                               
 
 });
+ 
  ```
  
  
