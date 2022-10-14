@@ -724,3 +724,14 @@ create a variable that refer to the play/pause button inside the 'video' class.
 playPauseBtn = container.querySelector(".play-pause i")
 ```
 
+# Step 4:
+we will create a function to make the play/pause button work. the "click" is an event that related to the "addEventListener" to make something happen when the user click the button. and the "click" is also added to the function to make the function work when the user click the play/pause button
+
+```javascript
+playPauseBtn.addEventListener("click", () => {                    
+
+    (mainVideo.paused) ? mainVideo.play() : mainVideo.pause();    
+
+});
+```
+
