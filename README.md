@@ -4,17 +4,12 @@
 the project was created using 3 files: HTML, CSS, and JavaScript file.
 
 <br />
-<br />
-
-
-
-</br>
 </br>
 
 # JavaScript file step by step explanation ![#FFFF00](https://via.placeholder.com/15/FFFF00/FFFF00.png) 
 
 </br>
-
+</br>
 # Step 1:
 create a variable that refer to the 'container' class in the HTML file.
 
