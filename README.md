@@ -10,6 +10,7 @@ the project was created using 3 files: HTML, CSS, and JavaScript file.
 
 </br>
 </br>
+
 # Step 1:
 create a variable that refer to the 'container' class in the HTML file.
 
